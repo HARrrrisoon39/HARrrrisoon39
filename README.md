@@ -11,6 +11,6 @@
 <!-- <img align="right" src="https://media0.giphy.com/media/3oKIPnAiaMCws8nOsE/200w.webp?cid=ecf05e47papsfg60dpruna3s4172ppccc2tl9z79dtt23x7a&rid=200w.webp&ct=g"> -->
 <ul>
   <li>👋 I’m Hari Rajan</li>
-  <li>❤️ I love Creating websites and Programming in Python.</li>
+  <li>❤️ I love Creating websites and Programming in Typescript, Python.</li>
   <li>🧐 Portfolio Website, https://harrrrisoon39.github.io/</li>
 </ul>
