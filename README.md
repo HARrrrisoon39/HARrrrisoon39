@@ -10,7 +10,7 @@
 <img align="right" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="Coding animation">
 <!-- <img align="right" src="https://media0.giphy.com/media/3oKIPnAiaMCws8nOsE/200w.webp?cid=ecf05e47papsfg60dpruna3s4172ppccc2tl9z79dtt23x7a&rid=200w.webp&ct=g"> -->
 <ul>
-  <li>👋 I'm Hari Rajan</li>
+  <li>✨ I'm Hari Rajan</li>
   <li>❤️ I love creating web applications and data-driven products.</li>
   <li>🧐 Portfolio Website: https://harirajan7.netlify.app</li>
   <li>💻 GitHub: https://github.com/HARrrrisoon39</li>
