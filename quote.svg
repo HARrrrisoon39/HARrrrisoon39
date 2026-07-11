@@ -12,14 +12,18 @@
       <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <!-- Clip accent bar to the exact card shape -->
+    <clipPath id="cardClip">
+      <rect width="480" height="120" rx="14"/>
+    </clipPath>
   </defs>
 
-  <!-- Card background: flat left, rounded right -->
-  <path d="M0 0 H466 Q480 0 480 14 V106 Q480 120 466 120 H0 Z" fill="#1a1a2e"/>
-  <path d="M0 0 H466 Q480 0 480 14 V106 Q480 120 466 120 H0 Z" fill="none" stroke="#2d2d5e" stroke-width="1"/>
+  <!-- Card background -->
+  <rect width="480" height="120" rx="14" fill="#1a1a2e"/>
+  <rect width="480" height="120" rx="14" fill="none" stroke="#2d2d5e" stroke-width="1"/>
 
-  <!-- Left accent bar: straight left edge, no clip needed -->
-  <rect x="0" y="0" width="4" height="120" fill="url(#accentBar)"/>
+  <!-- Accent bar clipped to card — covers the stroke on left edge too -->
+  <rect x="0" y="0" width="5" height="120" fill="url(#accentBar)" clip-path="url(#cardClip)"/>
 
   <!-- Glowing quote mark -->
   <text x="20" y="62" font-size="64" font-weight="700" font-family="Arial, sans-serif"
@@ -36,7 +40,7 @@
   <!-- Thin gradient divider -->
   <rect x="64" y="82" width="390" height="1" rx="1" fill="url(#qGrad)" opacity="0.3"/>
 
-  <!-- Author with gradient fill -->
+  <!-- Author -->
   <text x="454" y="101" font-size="11.5" font-family="Arial, sans-serif"
         font-weight="700" fill="url(#qGrad)" text-anchor="end" letter-spacing="0.3">
     — Linus Torvalds
