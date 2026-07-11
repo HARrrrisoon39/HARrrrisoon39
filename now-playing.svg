@@ -1,17 +1,6 @@
 <svg width="420" height="100" viewBox="0 0 420 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes bb { from { transform: scaleY(0.15); } to { transform: scaleY(1); } }
     @keyframes pfill { from { width: 86px; } to { width: 308px; } }
-    .album { animation: spin 10s linear infinite; transform-origin: 48px 50px; }
-    .bar {
-      transform-box: fill-box;
-      transform-origin: 50% 100%;
-      animation: bb 0.8s ease-in-out infinite alternate;
-    }
-    .bar:nth-child(2) { animation-delay: 0.1s; }
-    .bar:nth-child(3) { animation-delay: 0.2s; }
-    .bar:nth-child(4) { animation-delay: 0.15s; }
     .pfill { animation: pfill 28s linear infinite; }
   </style>
 
@@ -19,35 +8,57 @@
   <rect width="420" height="100" rx="14" fill="#1a1a2e"/>
   <rect width="420" height="100" rx="14" fill="none" stroke="#2d2d5e" stroke-width="1"/>
 
-  <!-- Album art (full spin) -->
-  <g class="album">
+  <!-- Album art: clipped so rotation stays inside the box -->
+  <clipPath id="ac"><rect x="16" y="18" width="64" height="64" rx="10"/></clipPath>
+  <g clip-path="url(#ac)">
     <rect x="16" y="18" width="64" height="64" rx="10" fill="url(#albumGrad)"/>
-    <text x="48" y="57" font-size="26" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="Arial">&#9835;</text>
+    <text x="48" y="57" font-size="26" text-anchor="middle"
+          fill="rgba(255,255,255,0.3)" font-family="Arial">&#9835;</text>
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 48 50" to="360 48 50" dur="10s" repeatCount="indefinite"/>
   </g>
 
   <!-- NOW PLAYING label -->
-  <text x="96" y="30" font-size="11" font-weight="700" fill="#1db954"
+  <text x="96" y="32" font-size="11" font-weight="700" fill="#1db954"
         font-family="Arial, sans-serif" letter-spacing="1">NOW PLAYING</text>
 
-  <!-- Equaliser bars (next to label) -->
-  <g transform="translate(197, 17)">
-    <rect class="bar" x="0"  y="0" width="3" height="14" rx="2" fill="#1db954"/>
-    <rect class="bar" x="5"  y="0" width="3" height="14" rx="2" fill="#1db954"/>
-    <rect class="bar" x="10" y="0" width="3" height="14" rx="2" fill="#1db954"/>
-    <rect class="bar" x="15" y="0" width="3" height="14" rx="2" fill="#1db954"/>
-  </g>
+  <!-- Equaliser bars — anchored at y=33, grow upward -->
+  <rect x="186" width="3" rx="2" fill="#1db954">
+    <animate attributeName="height" values="2;14;2" dur="0.8s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="y" values="31;19;31" dur="0.8s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </rect>
+  <rect x="192" width="3" rx="2" fill="#1db954">
+    <animate attributeName="height" values="2;14;2" dur="0.8s" begin="0.1s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="y" values="31;19;31" dur="0.8s" begin="0.1s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </rect>
+  <rect x="198" width="3" rx="2" fill="#1db954">
+    <animate attributeName="height" values="2;14;2" dur="0.8s" begin="0.2s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="y" values="31;19;31" dur="0.8s" begin="0.2s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </rect>
+  <rect x="204" width="3" rx="2" fill="#1db954">
+    <animate attributeName="height" values="2;14;2" dur="0.8s" begin="0.15s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="y" values="31;19;31" dur="0.8s" begin="0.15s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </rect>
 
   <!-- Song title -->
-  <text x="96" y="50" font-size="15" font-weight="700" fill="#ffffff"
+  <text x="96" y="52" font-size="15" font-weight="700" fill="#ffffff"
         font-family="Arial, sans-serif">Blinding Lights</text>
 
   <!-- Artist -->
-  <text x="96" y="65" font-size="12" fill="#8b949e"
+  <text x="96" y="67" font-size="12" fill="#8b949e"
         font-family="Arial, sans-serif">The Weeknd</text>
 
   <!-- Progress bar -->
-  <rect x="96" y="76" width="308" height="3" rx="99" fill="#2a2a4a"/>
-  <rect class="pfill" x="96" y="76" width="86" height="3" rx="99" fill="#1db954"/>
+  <rect x="96" y="78" width="308" height="3" rx="99" fill="#2a2a4a"/>
+  <rect class="pfill" x="96" y="78" width="86" height="3" rx="99" fill="#1db954"/>
 
   <defs>
     <linearGradient id="albumGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
