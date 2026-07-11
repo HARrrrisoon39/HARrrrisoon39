@@ -6,21 +6,26 @@
 
 ## ⚡ About Me
 
-<img align="right" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJkMXg2ZDBtYnhweWh3cDZlOGo3bTQ2cDB3dzJ5YzlodXUyaGN3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JqmupuTVZYaQX5s094/giphy.gif" alt="Coding animation" width="260" style="margin-right: 60px;">
-
-<table border="0" cellspacing="8" cellpadding="12">
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="50%"><sup>Who</sup><br/><b>✨ Hari Rajan</b></td>
-    <td width="50%"><sup>Passion</sup><br/><b>❤️ Web apps &amp; data-driven products</b></td>
+    <td valign="top">
+      <table border="0" cellspacing="8" cellpadding="12">
+        <tr>
+          <td width="50%"><sup>Who</sup><br/><b>✨ Hari Rajan</b></td>
+          <td width="50%"><sup>Passion</sup><br/><b>❤️ Web apps &amp; data-driven products</b></td>
+        </tr>
+      </table>
+      <br/>
+      <a href="https://linkedin.com/in/harirajan007"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+      <a href="https://github.com/HARrrrisoon39"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+      <a href="https://harirajan7.netlify.app"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
+      <a href="mailto:harirajan2611@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+    </td>
+    <td valign="top" align="right">
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJkMXg2ZDBtYnhweWh3cDZlOGo3bTQ2cDB3dzJ5YzlodXUyaGN3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JqmupuTVZYaQX5s094/giphy.gif" alt="Coding animation" width="260"/>
+    </td>
   </tr>
 </table>
-
-<a href="https://linkedin.com/in/harirajan007"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://github.com/HARrrrisoon39"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://harirajan7.netlify.app"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
-<a href="mailto:harirajan2611@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
-
-<br clear="both">
 
 ## 🎵 Now Playing
 
