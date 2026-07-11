@@ -8,7 +8,7 @@
 </p>
 <img align="right" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJkMXg2ZDBtYnhweWh3cDZlOGo3bTQ2cDB3dzJ5YzlodXUyaGN3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JqmupuTVZYaQX5s094/giphy.gif" alt="Coding animation" width="260">
 
-### ⚡ About Me
+## ⚡ About Me
 
 <table border="0" cellspacing="8" cellpadding="12">
   <tr>
@@ -24,7 +24,7 @@
 
 <br clear="both">
 
-### 🎵 Now Playing
+## 🎵 Now Playing
 
 <p align="center">
   <a href="https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b">
@@ -32,13 +32,13 @@
   </a>
 </p>
 
-### 🐍 Contribution Snake
+## 🐍 Contribution Snake
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/HARrrrisoon39/HARrrrisoon39/output/github-contribution-grid-snake-dark.svg" alt="snake gif" />
 </p>
 
-### 👀 Visitors & Vibes
+## 👀 Visitors & Vibes
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=HARrrrisoon39&style=for-the-badge&color=f72ee2&labelColor=21262d&label=%F0%9F%91%80+Profile+Views&base=700" alt="Profile Views" />
