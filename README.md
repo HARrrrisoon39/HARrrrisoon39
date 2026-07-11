@@ -1,7 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=header" width="100%" alt="wave"/>
 
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=IBM+Plex+Sans&color=gradient&size=30&weight=700&center=true&vCenter=true&width=600&speed=65&pause=2000&lines=Welcome+to+mine+Profile+%E2%9D%A4%EF%B8%8F;Hope+You+Are+Doing+Well!;" /></a>
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=IBM+Plex+Sans&color=gradient&size=30&weight=700&center=true&vCenter=true&width=600&speed=65&pause=2000&lines=Welcome+to+my+Profile+%E2%9D%A4%EF%B8%8F;Hope+You+Are+Doing+Well!;" /></a>
 </p>
 
 ## ⚡ About Me
