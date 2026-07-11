@@ -43,7 +43,7 @@
 </p>
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&bg_color=1a1a2e" alt="Random Dev Quote" />
+  <img src="./quote.svg" alt="Dev Quote" />
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" alt="wave"/>
