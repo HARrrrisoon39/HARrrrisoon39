@@ -1,10 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=header" width="100%" alt="wave"/>
 
 <p align="center">
-  <h1 align="center">Welcome to <a href="https://harrrrisoon39.github.io/">mine</a> Profile ❤️</h1>
-</p>
-<p align="center">
-  <a align="center" href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=IBM+Plex+Sans&color=gradient&size=30&weight=700&center=true&vCenter=true&width=500&lines=Hope+You+Are+Doing+Well!;" /></a>
+  <b style="font-size:28px">Welcome to <a href="https://harrrrisoon39.github.io/">mine</a> Profile ❤️</b> &nbsp; <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=IBM+Plex+Sans&color=gradient&size=28&weight=700&center=true&vCenter=true&width=420&lines=Hope+You+Are+Doing+Well!;" /></a>
 </p>
 
 ## ⚡ About Me
