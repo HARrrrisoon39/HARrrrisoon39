@@ -1,3 +1,5 @@
+<img src="./wave-top.svg" width="100%" alt="wave"/>
+
 <p align="center">Hi there 👋</p>
 <p align="center">
   <h1 align="center">Welcome to <a href="https://harrrrisoon39.github.io/">mine</a> Profile ❤️</h1>
@@ -46,3 +48,5 @@
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
 </p>
+
+<img src="./wave-bottom.svg" width="100%" alt="wave"/>
