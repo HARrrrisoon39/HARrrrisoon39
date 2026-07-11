@@ -17,13 +17,18 @@
     <td><sup>Portfolio</sup><br/>🧐 <a href="https://harirajan7.netlify.app">harirajan7.netlify.app</a></td>
     <td><sup>Email</sup><br/>✉️ harirajan2611@gmail.com</td>
   </tr>
-  <tr>
-    <td><sup>GitHub</sup><br/>💻 <a href="https://github.com/HARrrrisoon39">HARrrrisoon39</a></td>
-    <td><sup>LinkedIn</sup><br/>🔗 <a href="https://linkedin.com/in/harirajan007">harirajan007</a></td>
-  </tr>
 </table>
 
 <br clear="both">
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="https://linkedin.com/in/harirajan007"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/HARrrrisoon39"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://harirajan7.netlify.app"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
+  <a href="mailto:harirajan2611@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+</p>
 
 ---
 
