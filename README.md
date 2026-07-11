@@ -4,15 +4,24 @@
 <p align="center">
   <a align="center" href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?&font=IBM+Plex+Sans&color=F72EE2&size=25&lines=Hope+You+Are+Doing+Well!;" /></a>
 </p>
-<img align="right" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="Coding animation">
-<ul>
-  <li>✨ I'm Hari Rajan</li>
-  <li>❤️ I love creating web applications and data-driven products.</li>
-  <li>🧐 Portfolio Website: https://harirajan7.netlify.app</li>
-  <li>💻 GitHub: https://github.com/HARrrrisoon39</li>
-  <li>🔗 LinkedIn: https://linkedin.com/in/harirajan007</li>
-  <li>✉️ Email: harirajan2611@gmail.com</li>
-</ul>
+<img align="right" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="Coding animation" width="240">
+
+## ⚡ About Me
+
+<table>
+  <tr>
+    <td width="50%"><sup>Who</sup><br/><b>✨ Hari Rajan</b></td>
+    <td width="50%"><sup>Passion</sup><br/><b>❤️ Web apps &amp; data-driven products</b></td>
+  </tr>
+  <tr>
+    <td><sup>Portfolio</sup><br/>🧐 <a href="https://harirajan7.netlify.app">harirajan7.netlify.app</a></td>
+    <td><sup>Email</sup><br/>✉️ harirajan2611@gmail.com</td>
+  </tr>
+  <tr>
+    <td><sup>GitHub</sup><br/>💻 <a href="https://github.com/HARrrrisoon39">HARrrrisoon39</a></td>
+    <td><sup>LinkedIn</sup><br/>🔗 <a href="https://linkedin.com/in/harirajan007">harirajan007</a></td>
+  </tr>
+</table>
 
 <br clear="both">
 
