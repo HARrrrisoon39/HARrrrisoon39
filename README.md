@@ -29,7 +29,7 @@ Hi there 👋
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=HARrrrisoon39&theme=react-dark&hide_border=true&area=true&color=a371f7&line=a371f7&point=ffffff" alt="Contribution Graph" />
+  <img src="https://raw.githubusercontent.com/HARrrrisoon39/HARrrrisoon39/output/github-contribution-grid-snake-dark.svg" alt="snake gif" />
 </p>
 
 ---
