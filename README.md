@@ -1,3 +1,4 @@
+<p align="center">Hi there 👋</p>
 <p align="center">
   <h1 align="center">Welcome to <a href="https://harrrrisoon39.github.io/">mine</a> Profile ❤️</h1>
 </p>
@@ -26,6 +27,11 @@
 
 <p align="center">
   <img src="./now-playing.svg" alt="Now Playing" />
+</p>
+<p align="center">
+  <a href="https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b">
+    <img src="https://img.shields.io/badge/▶%20Play%20on%20Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Play on Spotify"/>
+  </a>
 </p>
 
 ## 🐍 Contribution Snake
