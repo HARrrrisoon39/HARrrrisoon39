@@ -1,4 +1,4 @@
-<img src="./wave-top.svg" width="100%" alt="wave"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=header" width="100%" alt="wave"/>
 
 <p align="center">Hi there 👋</p>
 <p align="center">
@@ -49,4 +49,4 @@
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
 </p>
 
-<img src="./wave-bottom.svg" width="100%" alt="wave"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" alt="wave"/>
