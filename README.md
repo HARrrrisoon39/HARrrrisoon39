@@ -25,6 +25,7 @@
 <a href="https://github.com/HARrrrisoon39"><img src="https://img.shields.io/badge/%20%20GitHub%20%20-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="https://harirajan7.netlify.app"><img src="https://img.shields.io/badge/%20%20Portfolio%20%20-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
 <a href="mailto:harirajan2611@gmail.com"><img src="https://img.shields.io/badge/%20%20Gmail%20%20-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+<a href="https://www.instagram.com/harrison._.7"><img src="https://img.shields.io/badge/%20%20Instagram%20%20-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 
 <br clear="both">
 
