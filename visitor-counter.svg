@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 36" width="214" height="36">
+  <defs>
+    <clipPath id="c">
+      <rect width="214" height="36" rx="8"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <!-- right side dark bg -->
+    <rect width="214" height="36" fill="#161b22"/>
+    <!-- left label bg -->
+    <rect width="137" height="36" fill="#21262d"/>
+    <!-- divider -->
+    <rect x="137" width="1" height="36" fill="#30363d"/>
+  </g>
+  <!-- outer border -->
+  <rect width="214" height="36" rx="8" fill="none" stroke="#30363d" stroke-width="1"/>
+  <!-- label -->
+  <text x="68" y="18" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle" dominant-baseline="central">&#x1F440; Profile Views</text>
+  <!-- count -->
+  <text x="176" y="18" font-family="'Courier New',Courier,monospace" font-size="15" font-weight="600" fill="#f72ee2" text-anchor="middle" dominant-baseline="central" letter-spacing="2">700</text>
+</svg>

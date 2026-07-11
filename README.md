@@ -35,7 +35,7 @@
 ## 👀 Visitors & Vibes
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=HARrrrisoon39&color=blueviolet&style=flat&label=Profile+Views&base=700" alt="Profile Views" />
+  <img src="./visitor-counter.svg" alt="Profile Views" />
 </p>
 
 <p align="center">
