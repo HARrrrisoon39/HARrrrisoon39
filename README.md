@@ -1,4 +1,4 @@
-﻿Hi there 👋
+Hi there 👋
 
 <p align="center">
   <h1 align="center">Welcome to <a href="https://harrrrisoon39.github.io/">mine</a> Profile ❤️</h1>
@@ -6,9 +6,7 @@
 <p align="center">
   <a align="center" href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?&font=IBM+Plex+Sans&color=F72EE2&size=25&lines=Hope+You+Are+Doing+Well!;" /></a>
 </p>
-<!-- <p>I am a Developer</p> -->
 <img align="right" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="Coding animation">
-<!-- <img align="right" src="https://media0.giphy.com/media/3oKIPnAiaMCws8nOsE/200w.webp?cid=ecf05e47papsfg60dpruna3s4172ppccc2tl9z79dtt23x7a&rid=200w.webp&ct=g"> -->
 <ul>
   <li>✨ I'm Hari Rajan</li>
   <li>❤️ I love creating web applications and data-driven products.</li>
@@ -17,3 +15,27 @@
   <li>🔗 LinkedIn: https://linkedin.com/in/harirajan007</li>
   <li>✉️ Email: harirajan2611@gmail.com</li>
 </ul>
+
+---
+
+## 🎵 Now Playing
+
+<p align="center">
+  <img src="./now-playing.svg" alt="Now Playing" />
+</p>
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/HARrrrisoon39/HARrrrisoon39/output/github-contribution-grid-snake-dark.svg" alt="snake gif" />
+</p>
+
+---
+
+## 👀 Visitors & Vibes
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+</p>
