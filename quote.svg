@@ -12,18 +12,14 @@
       <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="cardClip">
-      <rect width="480" height="120" rx="14"/>
-    </clipPath>
   </defs>
 
-  <!-- Card background -->
-  <rect width="480" height="120" rx="14" fill="#1a1a2e"/>
-  <!-- Subtle inner border -->
-  <rect width="480" height="120" rx="14" fill="none" stroke="#2d2d5e" stroke-width="1"/>
+  <!-- Card background: flat left, rounded right -->
+  <path d="M0 0 H466 Q480 0 480 14 V106 Q480 120 466 120 H0 Z" fill="#1a1a2e"/>
+  <path d="M0 0 H466 Q480 0 480 14 V106 Q480 120 466 120 H0 Z" fill="none" stroke="#2d2d5e" stroke-width="1"/>
 
-  <!-- Left accent bar clipped to card rounded corners -->
-  <rect x="0" y="0" width="4" height="120" fill="url(#accentBar)" clip-path="url(#cardClip)"/>
+  <!-- Left accent bar: straight left edge, no clip needed -->
+  <rect x="0" y="0" width="4" height="120" fill="url(#accentBar)"/>
 
   <!-- Glowing quote mark -->
   <text x="20" y="62" font-size="64" font-weight="700" font-family="Arial, sans-serif"
