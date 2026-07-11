@@ -6,7 +6,7 @@
 
 ## ⚡ About Me
 
-<img align="right" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJkMXg2ZDBtYnhweWh3cDZlOGo3bTQ2cDB3dzJ5YzlodXUyaGN3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JqmupuTVZYaQX5s094/giphy.gif" alt="Coding animation" width="260">
+<img align="right" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJkMXg2ZDBtYnhweWh3cDZlOGo3bTQ2cDB3dzJ5YzlodXUyaGN3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JqmupuTVZYaQX5s094/giphy.gif" alt="Coding animation" width="260" style="margin-right: 60px;">
 
 <table border="0" cellspacing="8" cellpadding="12">
   <tr>
