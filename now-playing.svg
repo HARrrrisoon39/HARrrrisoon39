@@ -55,17 +55,12 @@
   <!-- Separator -->
   <line x1="16" y1="101" x2="404" y2="101" stroke="#2d2d5e" stroke-width="1"/>
 
-  <!-- ── PLAY ON SPOTIFY button (centered pill) ── -->
-  <rect x="110" y="112" width="200" height="26" rx="13" fill="#1db954"/>
-
-  <!-- Spotify logo — three concentric arcs -->
-  <path d="M122 121.5 Q128 119.2 134 121.5" stroke="#000" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <path d="M122.5 124.5 Q128 122.5 133.5 124.5" stroke="#000" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-  <path d="M123.5 127.2 Q128 125.8 132.5 127.2" stroke="#000" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-
-  <!-- Button text -->
-  <text x="224" y="129" font-size="10.5" font-weight="700" fill="#000000"
-        font-family="Arial, sans-serif" text-anchor="middle" letter-spacing="0.8">&#x25B6;  PLAY ON SPOTIFY</text>
+  <!-- ── Open Player button (centered pill) ── -->
+  <a href="https://harrrrisoon39.github.io/player.html">
+    <rect x="110" y="112" width="200" height="26" rx="13" fill="#1db954"/>
+    <text x="210" y="129" font-size="10.5" font-weight="700" fill="#000000"
+          font-family="Arial, sans-serif" text-anchor="middle" letter-spacing="0.8">&#x25B6;  OPEN PLAYER</text>
+  </a>
 
   <defs>
     <linearGradient id="albumGrad" x1="0" y1="0" x2="68" y2="68" gradientUnits="userSpaceOnUse">

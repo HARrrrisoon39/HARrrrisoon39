@@ -26,8 +26,8 @@
 ## 🎵 Now Playing
 
 <p align="center">
-  <a href="https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b">
-    <img src="./now-playing.svg" alt="Now Playing — click to play on Spotify" />
+  <a href="https://harrrrisoon39.github.io/player.html">
+    <img src="./now-playing.svg" alt="Now Playing — click to open player" />
   </a>
 </p>
 

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Now Playing — Hari Rajan</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d1117;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #2d2d5e;
+      border-radius: 20px;
+      padding: 32px 28px 28px;
+      width: 420px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    }
+
+    /* ── Album art ── */
+    .album-wrap {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .album-art {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #c724d4, #7928ca);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: rgba(255,255,255,0.3);
+      flex-shrink: 0;
+      animation: spin 2s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(-6deg); }
+      to   { transform: rotate(6deg); }
+    }
+
+    .album-art.paused { animation-play-state: paused; }
+
+    .track-info { flex: 1; min-width: 0; }
+
+    .now-playing-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #1db954;
+      margin-bottom: 4px;
+    }
+
+    .track-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .track-artist {
+      font-size: 13px;
+      color: #8b949e;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ── Equaliser bars ── */
+    .eq {
+      display: flex;
+      gap: 3px;
+      align-items: flex-end;
+      height: 16px;
+      margin-top: 6px;
+    }
+
+    .eq span {
+      width: 3px;
+      border-radius: 2px;
+      background: #1db954;
+    }
+
+    .eq span:nth-child(1) { animation: b1 0.8s ease-in-out infinite; }
+    .eq span:nth-child(2) { animation: b2 0.8s ease-in-out infinite 0.1s; }
+    .eq span:nth-child(3) { animation: b3 0.8s ease-in-out infinite 0.2s; }
+    .eq span:nth-child(4) { animation: b4 0.8s ease-in-out infinite 0.15s; }
+
+    @keyframes b1 { 0%,100%{height:4px}  50%{height:14px} }
+    @keyframes b2 { 0%,100%{height:10px} 50%{height:4px}  }
+    @keyframes b3 { 0%,100%{height:6px}  50%{height:14px} }
+    @keyframes b4 { 0%,100%{height:14px} 50%{height:6px}  }
+
+    .eq.paused span { animation-play-state: paused; }
+
+    /* ── Progress bar ── */
+    .progress-wrap {
+      margin: 16px 0 6px;
+      cursor: pointer;
+    }
+
+    .progress-bg {
+      width: 100%;
+      height: 4px;
+      background: #2a2a4a;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #1db954;
+      border-radius: 2px;
+      width: 0%;
+      transition: width 0.2s linear;
+    }
+
+    .progress-bg:hover .progress-fill { background: #22d460; }
+
+    .time-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #8b949e;
+      margin-top: 5px;
+    }
+
+    /* ── Controls ── */
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 18px 0 22px;
+    }
+
+    .btn {
+      background: none;
+      border: none;
+      color: #8b949e;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 50%;
+      transition: color 0.15s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn:hover { color: #fff; }
+    .btn:active { transform: scale(0.9); }
+
+    .btn-play {
+      width: 52px;
+      height: 52px;
+      background: #1db954;
+      border-radius: 50%;
+      color: #000;
+      font-size: 20px;
+    }
+
+    .btn-play:hover { background: #22d460; color: #000; transform: scale(1.06); }
+
+    /* ── Separator ── */
+    hr {
+      border: none;
+      border-top: 1px solid #2d2d5e;
+      margin-bottom: 18px;
+    }
+
+    /* ── Track list ── */
+    .tracklist { display: flex; flex-direction: column; gap: 6px; }
+
+    .track-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .track-item:hover { background: #22224a; }
+    .track-item.active { background: #1a2a1a; }
+
+    .track-num {
+      font-size: 12px;
+      color: #8b949e;
+      width: 16px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .track-item.active .track-num { color: #1db954; }
+
+    .track-thumb {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #c724d4, #7928ca);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: rgba(255,255,255,0.35);
+      flex-shrink: 0;
+    }
+
+    .track-meta { flex: 1; min-width: 0; }
+
+    .track-meta-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .track-item.active .track-meta-title { color: #1db954; }
+
+    .track-meta-artist {
+      font-size: 12px;
+      color: #8b949e;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .track-duration {
+      font-size: 12px;
+      color: #8b949e;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- ── Now playing header ── -->
+  <div class="album-wrap">
+    <div class="album-art paused" id="albumArt">♪</div>
+    <div class="track-info">
+      <div class="now-playing-label">NOW PLAYING</div>
+      <div class="track-title" id="trackTitle">Select a track</div>
+      <div class="track-artist" id="trackArtist">—</div>
+      <div class="eq paused" id="eq">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Progress ── -->
+  <div class="progress-wrap" id="progressWrap">
+    <div class="progress-bg">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+  <div class="time-row">
+    <span id="timeElapsed">0:00</span>
+    <span id="timeDuration">0:00</span>
+  </div>
+
+  <!-- ── Controls ── -->
+  <div class="controls">
+    <button class="btn" id="btnPrev" title="Previous">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/>
+      </svg>
+    </button>
+    <button class="btn btn-play" id="btnPlay" title="Play / Pause">
+      <svg id="iconPlay" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg id="iconPause" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+        <path d="M6 19h4V5H6zm8-14v14h4V5z"/>
+      </svg>
+    </button>
+    <button class="btn" id="btnNext" title="Next">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 18l8.5-6L6 6v12zm2-8.14 5.51 3.64L8 15.14V9.86zM16 6h2v12h-2z"/>
+      </svg>
+    </button>
+  </div>
+
+  <hr/>
+
+  <!-- ── Track list ── -->
+  <div class="tracklist" id="tracklist"></div>
+</div>
+
+<audio id="audio"></audio>
+
+<script>
+  const tracks = [
+    { title: "Blinding Lights", artist: "The Weeknd", src: "music/The Weeknd - Blinding Lights (Official Video).mp3" },
+    { title: "Why This Kolaveri Di", artist: "Dhanush", src: "music/Ytmp3.gg_YouTube_3-Why-This-Kolaveri-Di-Official-Video-Dh_Media_YR12Z8f1Dh8_008_128k.mp3" },
+    { title: "Wavin' Flag", artist: "K'NAAN", src: "music/KNAAN - Wavin Flag (Coca-Cola Celebration Mix).mp3" },
+  ];
+
+  const audio       = document.getElementById("audio");
+  const albumArt    = document.getElementById("albumArt");
+  const trackTitle  = document.getElementById("trackTitle");
+  const trackArtist = document.getElementById("trackArtist");
+  const eq          = document.getElementById("eq");
+  const progressFill= document.getElementById("progressFill");
+  const progressWrap= document.getElementById("progressWrap");
+  const timeElapsed = document.getElementById("timeElapsed");
+  const timeDuration= document.getElementById("timeDuration");
+  const btnPlay     = document.getElementById("btnPlay");
+  const iconPlay    = document.getElementById("iconPlay");
+  const iconPause   = document.getElementById("iconPause");
+  const tracklist   = document.getElementById("tracklist");
+
+  let current = -1;
+  let playing = false;
+
+  function fmt(s) {
+    if (isNaN(s)) return "0:00";
+    const m = Math.floor(s / 60);
+    const sec = String(Math.floor(s % 60)).padStart(2, "0");
+    return `${m}:${sec}`;
+  }
+
+  function renderList() {
+    tracklist.innerHTML = "";
+    tracks.forEach((t, i) => {
+      const el = document.createElement("div");
+      el.className = "track-item" + (i === current ? " active" : "");
+      el.innerHTML = `
+        <span class="track-num">${i === current ? "♪" : i + 1}</span>
+        <div class="track-thumb">♪</div>
+        <div class="track-meta">
+          <div class="track-meta-title">${t.title}</div>
+          <div class="track-meta-artist">${t.artist}</div>
+        </div>
+        <span class="track-duration" id="dur-${i}">—</span>
+      `;
+      el.addEventListener("click", () => loadTrack(i, true));
+      tracklist.appendChild(el);
+    });
+  }
+
+  function setPlaying(state) {
+    playing = state;
+    iconPlay.style.display  = state ? "none" : "block";
+    iconPause.style.display = state ? "block" : "none";
+    albumArt.classList.toggle("paused", !state);
+    eq.classList.toggle("paused", !state);
+  }
+
+  function loadTrack(index, autoplay = false) {
+    current = index;
+    const t = tracks[index];
+    audio.src = t.src;
+    trackTitle.textContent  = t.title;
+    trackArtist.textContent = t.artist;
+    progressFill.style.width = "0%";
+    timeElapsed.textContent  = "0:00";
+    timeDuration.textContent = "0:00";
+    renderList();
+    if (autoplay) {
+      audio.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+    } else {
+      setPlaying(false);
+    }
+  }
+
+  btnPlay.addEventListener("click", () => {
+    if (current === -1) { loadTrack(0, true); return; }
+    if (playing) {
+      audio.pause();
+      setPlaying(false);
+    } else {
+      audio.play().then(() => setPlaying(true)).catch(() => {});
+    }
+  });
+
+  document.getElementById("btnPrev").addEventListener("click", () => {
+    if (current <= 0) return;
+    loadTrack(current - 1, playing);
+  });
+
+  document.getElementById("btnNext").addEventListener("click", () => {
+    if (current >= tracks.length - 1) return;
+    loadTrack(current + 1, playing);
+  });
+
+  audio.addEventListener("timeupdate", () => {
+    if (!audio.duration) return;
+    const pct = (audio.currentTime / audio.duration) * 100;
+    progressFill.style.width = pct + "%";
+    timeElapsed.textContent  = fmt(audio.currentTime);
+    timeDuration.textContent = fmt(audio.duration);
+  });
+
+  audio.addEventListener("ended", () => {
+    if (current < tracks.length - 1) {
+      loadTrack(current + 1, true);
+    } else {
+      setPlaying(false);
+      progressFill.style.width = "0%";
+    }
+  });
+
+  progressWrap.addEventListener("click", (e) => {
+    if (!audio.duration) return;
+    const rect = progressWrap.getBoundingClientRect();
+    const pct  = (e.clientX - rect.left) / rect.width;
+    audio.currentTime = pct * audio.duration;
+  });
+
+  // Pre-load durations for the track list
+  tracks.forEach((t, i) => {
+    const a = new Audio();
+    a.src = t.src;
+    a.addEventListener("loadedmetadata", () => {
+      const el = document.getElementById(`dur-${i}`);
+      if (el) el.textContent = fmt(a.duration);
+    });
+  });
+
+  renderList();
+</script>
+</body>
+</html>
