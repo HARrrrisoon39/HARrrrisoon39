@@ -13,10 +13,6 @@
     <td width="50%"><sup>Who</sup><br/><b>✨ Hari Rajan</b></td>
     <td width="50%"><sup>Passion</sup><br/><b>❤️ Web apps &amp; data-driven products</b></td>
   </tr>
-  <tr>
-    <td><sup>Portfolio</sup><br/>🧐 <a href="https://harirajan7.netlify.app">harirajan7.netlify.app</a></td>
-    <td><sup>Email</sup><br/>✉️ harirajan2611@gmail.com</td>
-  </tr>
 </table>
 
 <br clear="both">
