@@ -26,11 +26,8 @@
 ## 🎵 Now Playing
 
 <p align="center">
-  <img src="./now-playing.svg" alt="Now Playing" />
-</p>
-<p align="center">
   <a href="https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b">
-    <img src="https://img.shields.io/badge/▶%20Play%20on%20Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Play on Spotify"/>
+    <img src="./now-playing.svg" alt="Now Playing — click to play on Spotify" />
   </a>
 </p>
 
