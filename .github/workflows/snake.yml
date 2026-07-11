@@ -20,6 +20,8 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.SNAKE_TOKEN }}
 
       - name: Push snake.svg to output branch
         uses: crazy-max/ghaction-github-pages@v3
