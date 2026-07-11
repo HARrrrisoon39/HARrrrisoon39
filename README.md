@@ -27,15 +27,11 @@
   <img src="./now-playing.svg" alt="Now Playing" />
 </p>
 
----
-
 ## 🐍 Contribution Snake
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/HARrrrisoon39/HARrrrisoon39/output/github-contribution-grid-snake-dark.svg" alt="snake gif" />
 </p>
-
----
 
 ## 👀 Visitors & Vibes
 
@@ -46,8 +42,6 @@
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
 </p>
-
----
 
 ## 🤝 Connect With Me
 
