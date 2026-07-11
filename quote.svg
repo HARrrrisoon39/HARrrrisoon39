@@ -1,30 +1,48 @@
-<svg width="480" height="110" viewBox="0 0 480 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Card -->
-  <rect width="480" height="110" rx="14" fill="#1a1a2e"/>
-  <rect width="480" height="110" rx="14" fill="none" stroke="#2d2d5e" stroke-width="1"/>
-
-  <!-- Opening quote mark -->
-  <text x="20" y="52" font-size="52" font-weight="700" font-family="Arial, sans-serif"
-        fill="url(#qGrad)" opacity="0.85">"</text>
-
-  <!-- Quote text -->
-  <text x="52" y="40" font-size="12.5" font-family="Arial, sans-serif"
-        fill="#e6edf3" font-style="italic">
-    <tspan x="52" dy="0">If you need more than 3 levels of indentation,</tspan>
-    <tspan x="52" dy="18">you're screwed anyway, and should fix your program.</tspan>
-  </text>
-
-  <!-- Divider -->
-  <rect x="52" y="72" width="376" height="1" fill="#2d2d5e"/>
-
-  <!-- Author -->
-  <text x="428" y="91" font-size="11.5" font-family="Arial, sans-serif"
-        fill="#8b949e" text-anchor="end">— Linus Torvalds</text>
-
+<svg width="480" height="120" viewBox="0 0 480 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="qGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#c724d4"/>
       <stop offset="100%" stop-color="#7928ca"/>
     </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c724d4"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="cardClip">
+      <rect width="480" height="120" rx="14"/>
+    </clipPath>
   </defs>
+
+  <!-- Card background -->
+  <rect width="480" height="120" rx="14" fill="#1a1a2e"/>
+  <!-- Subtle inner border -->
+  <rect width="480" height="120" rx="14" fill="none" stroke="#2d2d5e" stroke-width="1"/>
+
+  <!-- Left accent bar clipped to card rounded corners -->
+  <rect x="0" y="0" width="4" height="120" fill="url(#accentBar)" clip-path="url(#cardClip)"/>
+
+  <!-- Glowing quote mark -->
+  <text x="20" y="62" font-size="64" font-weight="700" font-family="Arial, sans-serif"
+        fill="url(#qGrad)" opacity="0.25" filter="url(#glow)">"</text>
+  <text x="20" y="62" font-size="64" font-weight="700" font-family="Arial, sans-serif"
+        fill="url(#qGrad)" opacity="0.7">"</text>
+
+  <!-- Quote text -->
+  <text font-family="Arial, sans-serif" font-style="italic" fill="#e6edf3">
+    <tspan x="64" y="44" font-size="13" letter-spacing="0.2">If you need more than 3 levels of indentation,</tspan>
+    <tspan x="64" dy="20" font-size="13" letter-spacing="0.2">you're screwed anyway, and should fix your program.</tspan>
+  </text>
+
+  <!-- Thin gradient divider -->
+  <rect x="64" y="82" width="390" height="1" rx="1" fill="url(#qGrad)" opacity="0.3"/>
+
+  <!-- Author with gradient fill -->
+  <text x="454" y="101" font-size="11.5" font-family="Arial, sans-serif"
+        font-weight="700" fill="url(#qGrad)" text-anchor="end" letter-spacing="0.3">
+    — Linus Torvalds
+  </text>
 </svg>
