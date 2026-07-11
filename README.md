@@ -18,6 +18,14 @@ Hi there 👋
 
 ---
 
+## 🎵 Now Playing
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Spotify-Not%20Playing-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify" />
+</p>
+
+---
+
 ## 🐍 Contribution Snake
 
 <p align="center">
@@ -26,19 +34,7 @@ Hi there 👋
 
 ---
 
-## 🎵 Now Playing
-
-<p align="center">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=false&bar_color=1db954&bar_color_cover=false" alt="Spotify Now Playing" />
-</p>
-
----
-
 ## 👀 Visitors & Vibes
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=HARrrrisoon39&style=for-the-badge&color=blueviolet" alt="Profile Views" />
-</p>
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
