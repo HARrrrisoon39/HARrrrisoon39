@@ -21,8 +21,6 @@
 
 <br clear="both">
 
----
-
 ## 🎵 Now Playing
 
 <p align="center">
