@@ -1,6 +1,5 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=header" width="100%" alt="wave"/>
 
-<p align="center">Hi there 👋</p>
 <p align="center">
   <h1 align="center">Welcome to <a href="https://harrrrisoon39.github.io/">mine</a> Profile ❤️</h1>
 </p>
