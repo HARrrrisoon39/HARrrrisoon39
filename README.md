@@ -39,7 +39,7 @@
 ## 👀 Visitors & Vibes
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=HARrrrisoon39&style=for-the-badge&color=e91e8c&labelColor=0d1117&label=Profile+Views+%F0%9F%91%80&base=700" alt="Profile Views" />
+  👀&nbsp;&nbsp;<img src="https://komarev.com/ghpvc/?username=HARrrrisoon39&style=for-the-badge&color=e91e8c&labelColor=0d1117&label=Profile+Views&base=700" alt="Profile Views" />
 </p>
 
 <p align="center">
