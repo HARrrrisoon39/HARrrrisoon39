@@ -14,6 +14,8 @@
   <li>✉️ Email: harirajan2611@gmail.com</li>
 </ul>
 
+<br clear="both">
+
 ---
 
 ## 🎵 Now Playing
